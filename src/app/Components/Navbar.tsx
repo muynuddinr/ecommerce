@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white text-gray-800 shadow-lg">
       {/* Announcement Bar */}
-      <div className="bg-indigo-600">
+      <div className="bg-red-600">
         <div className="container mx-auto px-4 py-2 text-center text-white text-sm font-medium tracking-wider">
           🌟 Limited Time Offer: 20% Off All New Arrivals | Free Returns 🌟
         </div>
@@ -28,7 +28,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link href="/" className="text-2xl font-extrabold">
-            LUXE<span className="text-indigo-600">MART</span>
+            LUXE<span className="text-red-600">MART</span>
           </Link>
 
           {/* Search Bar */}
@@ -37,9 +37,9 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="What are you looking for?"
-                className="w-full px-5 py-2.5 rounded-lg bg-gray-100 border-2 border-gray-100 focus:border-indigo-600 focus:outline-none transition-all duration-300"
+                className="w-full px-5 py-2.5 rounded-lg bg-gray-100 border-2 border-gray-100 focus:border-red-600 focus:outline-none transition-all duration-300"
               />
-              <button className="absolute right-2 top-2.5 p-1 hover:text-indigo-600 transition-colors">
+              <button className="absolute right-2 top-2.5 p-1 hover:text-red-600 transition-colors">
                 <FiSearch className="h-5 w-5" />
               </button>
             </div>
@@ -49,17 +49,17 @@ const Navbar = () => {
           <div className="flex items-center space-x-6">
             <Link 
               href="/become-seller" 
-              className="hidden md:block px-6 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+              className="hidden md:block px-6 py-2 text-sm font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-300"
             >
               Start Selling
             </Link>
             <Link 
               href="/become-seller" 
-              className="md:hidden px-4 py-1.5 text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+              className="md:hidden px-4 py-1.5 text-sm font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-300"
             >
               Sell
             </Link>
-            <Link href="/wishlist" className="hidden md:flex items-center hover:text-indigo-600 transition-colors">
+            <Link href="/wishlist" className="hidden md:flex items-center hover:text-red-600 transition-colors">
               <div className="relative">
                 <FiHeart className="h-6 w-6" />
                 <span className="absolute -top-2 -right-2 bg-rose-500 text-white rounded-full px-1.5 py-0.5 text-xs font-bold min-w-[18px] text-center">
@@ -68,14 +68,14 @@ const Navbar = () => {
               </div>
             </Link>
             <Link href="/cart" className="flex items-center">
-              <div className="relative hover:text-indigo-600 transition-colors">
+              <div className="relative hover:text-red-600 transition-colors">
                 <FiShoppingCart className="h-6 w-6" />
-                <span className="absolute -top-2 -right-2 bg-indigo-600 text-white rounded-full px-1.5 py-0.5 text-xs font-bold min-w-[18px] text-center">
+                <span className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full px-1.5 py-0.5 text-xs font-bold min-w-[18px] text-center">
                   0
                 </span>
               </div>
             </Link>
-            <Link href="/account" className="hidden md:flex items-center hover:text-indigo-600 transition-colors">
+            <Link href="/account" className="hidden md:flex items-center hover:text-red-600 transition-colors">
               <FiUser className="h-6 w-6" />
             </Link>
           </div>
@@ -90,10 +90,10 @@ const Navbar = () => {
               <li key={item}>
                 <Link 
                   href={`/${item.toLowerCase().replace(' ', '-')}`} 
-                  className="hover:text-indigo-600 transition-colors relative group"
+                  className="hover:text-red-600 transition-colors relative group"
                 >
                   {item}
-                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-indigo-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                 </Link>
               </li>
             ))}
@@ -112,7 +112,7 @@ const Navbar = () => {
           {/* Close Button */}
           <div className="flex justify-between items-center p-4 border-b border-gray-200">
             <Link href="/" className="text-2xl font-extrabold">
-              LUXE<span className="text-indigo-600">MART</span>
+              LUXE<span className="text-red-600">MART</span>
             </Link>
             <button 
               onClick={() => setIsMenuOpen(false)}
@@ -130,9 +130,9 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="Search products..."
-                className="w-full px-5 py-3 rounded-lg bg-gray-100 border-2 border-gray-100 focus:border-indigo-600 focus:outline-none"
+                className="w-full px-5 py-3 rounded-lg bg-gray-100 border-2 border-gray-100 focus:border-red-600 focus:outline-none"
               />
-              <button className="absolute right-2 top-3 p-1 hover:text-indigo-600 transition-colors">
+              <button className="absolute right-2 top-3 p-1 hover:text-red-600 transition-colors">
                 <FiSearch className="h-5 w-5" />
               </button>
             </div>
@@ -176,7 +176,7 @@ const Navbar = () => {
               {/* Start Selling Button */}
               <Link 
                 href="/become-seller" 
-                className="block w-full px-6 py-3 text-center text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+                className="block w-full px-6 py-3 text-center text-sm font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors duration-300"
               >
                 Start Selling
               </Link>
